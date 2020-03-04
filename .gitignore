@@ -135,3 +135,5 @@ gradle-app.setting
 **/build/
 
 # End of https://www.gitignore.io/api/kotlin,intellij,gradle
+
+!quick-emoji.main.jar
