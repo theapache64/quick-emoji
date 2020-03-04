@@ -87,7 +87,7 @@ fun createEmojiButton(emoji: Emoji): JButton {
 
 fun onEmojiSelected(emoji: Emoji) {
     // copy contents
-    val selection = StringSelection(emoji.codes)
+    val selection = StringSelection(emoji.char)
     Toolkit.getDefaultToolkit().systemClipboard.setContents(
         selection,
         selection
@@ -161,7 +161,7 @@ fun createMainFrame(): JFrame {
                 println("Hidden")
                 Thread {
                     println("Kill timer ready for 5 seconds")
-                    Thread.sleep(10000)
+                    Thread.sleep(5000)
                     println("Killed")
                     exitProcess(0)
                 }.start()
