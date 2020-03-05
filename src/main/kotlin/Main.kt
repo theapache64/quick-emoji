@@ -124,7 +124,7 @@ fun onTextUpdated(jTextField: JTextField) {
     val keyword = jTextField.text.trim()
     println("Text updated $keyword")
     val emojis = if (keyword.isEmpty()) {
-        EmojiFinder.all().subList(0, 10)
+        EmojiFinder.all()
     } else {
         EmojiFinder.find(keyword)
     }
